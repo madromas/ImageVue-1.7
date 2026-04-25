@@ -1,0 +1,10 @@
+<b>Bold</b><br>
+<i>Italic</i><br>
+<u>Underline</u><br>
+<font color='#FF0000'>Color</font><br>
+<font face='Times New Roman'>Font</font><br>
+<a href='http://www.somesite.com' target='_blank'>Link</a><br>
+<font size='13'>Size</font><br>
+<a href='http://www.somesite.com' target='_blank'><font size='20' color='#FF0000'><b><u>multi</u></b></font></a><br>
+<p align='center'>Align</p>
+<p align='right'>Align</p>

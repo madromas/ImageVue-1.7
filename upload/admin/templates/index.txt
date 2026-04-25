@@ -1,0 +1,15 @@
+<b>A variety of templates to simplify editing multiple image descriptions. Useful for html snippets...</b>
+If you want to add signatures, or have a 'default text' which needs to be added to more than one image, you can create, modify or remove templates under <b>/admin/templates/</b> (textfiles.txt)
+Only Users with server access may create, modify or remove templates.
+You can also edit templates in every login session, but they will not be saved and will be reset next time you login. Likewise, users with no access to server, will be able to edit a template for use in current session only.
+To <b>add</b> template content to your current description text, you only need to click the <b>insert</b> button, and the current template content will be added to your current description text.
+If <b>index.txt</b> exsists, it will automatically be the first template to display.
+<b><u>Other options:</u></b><br><br>
+<b>reload</b> - Toggles between preview(html) and edit-mode. <b>Note: </b>Text will jump to edit-mode if you click and select the textfield area.
+<b>extract</b> - Copies the text from the current description, and adds it to the current template.
+<b>reset</b> - Resets the template to blank
+<b>reload</b> - Reloads the original template
+<b><u>Some tips:</u></b>
+- Try to use single quotations(') instead of double(')
+- Theres a small bug(if you may call it that) regarding <b>fontsize</b>. Flash and HTMl interpret fontsize differently - While relates to size the same way as css, photoshop and most other applications, html reads font sizes as relative settings. Ex. setting font size to 13 will result in a fairly small text in Flash, but a huge text in html. This becomes an issue when descriptions are displayed in popup windows from the imageVue client.
+For more information on usage of templates, <a href='info.html' target='_blank'><font color='#334777'><u>click here</u></font></a> (opens in new window)
