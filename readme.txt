@@ -1,6 +1,9 @@
 
 30. August 2006
 IMAGEVUE 1.7
+
+Running somehow on php 8
+
 -----------------------------------------------------------------------
 
 The following folders are contained within imagevue17.zip:
