@@ -1,0 +1,299 @@
+[GALLERY]
+#
+# [URL] means any url or path, [relURL] means relative url or path
+
+# Defines the path from the page where imageVue.swf is embeded 
+# Values:	[URL]|false
+# Default:	false
+globalpath = false
+
+# Path to content folder
+# Values:	[relURL]
+# Default:	content/
+contentfolder = content/
+
+# Menu depth
+# Values:	[groupname]|true|false
+# Default:	false
+singlelevel = false
+
+# Defines an imagefolder from where to access images. 
+# Values:	[relURL]|false
+# Default:	false
+folder = false
+
+# If set, imageVue will jump directly to the specified image.
+# Values:	[relURL]|false
+# Default:	false
+directimage = false
+
+# Language definition file
+# Value:	[relURL]
+# Default:	lang.ini
+text = lang.ini
+
+# Heading for gallery
+# Values:	[text]
+# Default:	imageVue Gallery
+startheading = imageVue Gallery
+
+# Defines the JPG or SWF to use as the start image
+# Values:	[relURL]
+# Default:	load3.jpg
+startimage = load3.jpg
+
+# Decides if the startimage should be kept after accessing an imagefolder.
+# Values:	true|false
+# Default:	false
+startimagekeep = false
+
+# If set, imageVue will load a given SWF file ontop of the startimage or the slideshow on startup. 
+# Values:	[relURL]|false
+# Default:	false
+swflayer = false
+
+# FX to be applied on the startimage. If set to blur, you will have to provide 
+# a blurred image along with your startimage. Ex. load.jpg + loadblur.jpg.
+# Values:	blur|true|false
+# Default	blur
+startfx = blur
+
+# Sets the default color of overlaying text and objects. Should be in contrast to the bgcol. 
+# Values:	[colorHEX]
+# Default:	34507A 
+textcol = 34507A
+
+# Sets the default color of the background and background objects. Should be in contrast to the textcol.
+# Values:	[colorHEX]
+# Default:	FFFFFF
+bgcol = FFFFFF
+
+# Sets the colors of the main menu background and main menu text. false = inherits from textcol/bgcol
+# Values:	[backgroundcolor],[textcolor]|false
+# Default:	FFFFFF,34507A
+menucol = FFFFFF,34507A
+
+# Defines the background image which goes behind the entire imageVue and aligns with browser stage size.
+# Values:	[relURL]|false
+# Default:	backswf.swf
+backimage = backswf.swf
+
+# Sets the alignment of the background image. The background image aligns to the browser width and height, while imageVue is centered.
+# Values:	TL|T|TR|R|BR|B|BL|L|M
+# Default:	TL
+backalign = TL
+
+# Enable or disable all sound FX on buttons and animations.
+# Values:	true|false
+# Default:	true
+sfx = true
+
+# Defines minimum bandwidth(kb/s) the user should have for the audioplayer to be enabled. false will disable the audioplayer.
+# Values:	[number]|false
+# Default:	true
+audio = false
+
+# Sets the location from where the audioplayer reads mp3 audiotracks. Or search into current viewing folders
+# Values:	[relURL]|groupfolder|imagefolder
+# Default:	mp3/
+audiopath = mp3/
+
+# Defines the alternative path for mp3 audiotracks if audioplayer encounters a folder containing no tracks.
+# Values:	[relURL]
+# Default:	mp3alt/
+emptyaudio = mp3alt/
+
+# Defines how tracks are being played
+# Values:	linear|loop
+# Default:	linear
+audiostyle = linear
+
+# Sets the interval for the minimum amount of time to go by(seconds) before audioplayer crossfades a new loop. If audiostyle is set to loop.
+# Values:	[number]
+# Default:	30
+loopinterval = 30
+
+# Sets the extension of audiotracks. Can be used to mask your mp3 files as custom extensions to avoid download managers intercepting an audiotrack.
+# Values:	[sting]
+# Default:	mp3
+audioextension = mp3
+
+# When set to true, a micro-icon will be displayed along with the audioplayer. 
+# On rollover of the icon, a message box will display the name of the audiotrack. When set to id3, Title, Artist and Album will additionally be displayed in the message box. 
+# Values:	id3|true|false
+audioinfo = id3
+
+# Sets the method of sorting folders for output in the main menu. Affects imagefolders and groupfolders. 
+# Can be name/date asc/desc or random
+# Values:	da|dd|na|nd|rnd
+# Default:	na
+foldersorting = na
+
+# Same as foldersorting but for images this time
+# Can be name/date asc/desc or random
+# Values:	da|dd|na|nd|rnd
+# Default:	dd (last on top)
+imagesorting = dd
+
+# Describes which button items to be displayed in the main navigation controls. 
+# If all are set to 0, the navigation controls will dissappear completely. 
+# By removing buttons, you will also be removing access to features like popup and motion.
+# Values:	[nextbutton],[previousbutton],[thumbnails],[motion],[open in popup],[open in blank],[toggle sound FX] 
+# Default:	1,1,1,1,1,0,0
+navigation = 1,1,1,1,1,0,0
+
+# Sets the default starting position of the main navigation controls.
+# Values:	[xpos, ypos, xpossmall, ypossmall]
+# Default:	680,170,523,446
+controlsdefpos = 680,170,523,446
+
+# Enables or disables the minimal alternative navigation buttons (<>) under the main image area.
+# Values:	true|false
+# Default:	true
+altnav = true
+
+# Allows keyboard input to navigate images and thumbnails.
+# Values:	true|false
+# Default:	true
+keycontrols = true
+
+# Enables or disables the sub buttons which display under the main image area. 
+# If set to 'below', thumbnails popup under the main image area, if the stage height is adequate. 
+# Values:	below|true|false
+# Default:	below
+subbuttons = below
+
+# If true, current active image is rendered invisible when going into thumbnails mode.
+# Values:	true|false
+# Default:	true
+hideimage = true
+
+# Decides what action is taken when a loaded image in the imagearea is clicked directly.
+# link - A special setting which allows an external link to be defined in the descriptions, and click will take the user directly there in a new browserwindow.
+# popup/true - Enables the full image to be opened in a popup window when clicked.
+# normal - Enables the full image to be opened in a new standard browser window.
+# false - Toggles back to thumbnail mode if clicked
+# Values:	link|popup|true|normal|false 
+# Default:	true
+imageclicklink = true
+
+# If enabled, displays a popup tooltip with information to user of the event that will occur when he click the full size image.
+# Values:	true|false
+# Default:	true
+imageclicklinkinfo = true
+
+# The applied transition effects between images. 'shines is strong on contrast while 'whitetint' is more subtle.
+# Values:	shine|whitetint
+# Default:	shine
+transitions = shine
+
+# Decides what items to display when rolling over the imagefolders in the main menu.
+# Values:	[name,groupfolder,amount,description]
+# Default:	0,0,0,1
+showfolderdescriptions = 0,0,0,1
+
+# Enables or disables descriptions in imageVue.
+# startopen - descriptions will allways open once they loaded
+# startopenifopen - description will open after they load only if the description was currently open when the last image was viewed
+# false - the descriptions will be disabled in imageVue
+# popover - an alternative method will provide a description when rolloing over the image
+# Values:	true|false|startopenifopen|startopen|popover
+# Default:	popover
+descriptions = popover
+
+# If enabled, displays DATE, DIMENSIONS and SIZE attributes of an image in the imageVue descriptions area. This will only apply if descriptions is not set to "popover". 
+# Values:	true|false
+# Default:	false
+descriptionattributes = false
+
+# Enables or disables the main menu. Useful to use with folder feature when intending to show a single folder gallery only. 
+# Values:	[groupname]|true|false
+# Default:	true
+showmenu = true
+
+# Decides if the main menu should start open or closed.
+# Values:	true|false
+# Default:	false
+menuopen = false
+
+# If enabled, any click on the main image area on startup will toggle open/close of the main menu. 
+# Values:	true|false
+# Default:	false
+startclick = true
+
+# Sets the default starting position of the imagescroll navigation.
+# Values:	[xpos, ypos, xpossmall, ypossmall]
+# Default:	680,25,auto,auto
+imagenavidefpos = 680,25,auto,auto
+
+# Decides if auto scrolling motion should be applied on images.
+# Values:	true|false
+# Default:	false
+motioninit = false
+
+# Sets the speed of the scrolling image if motion is applied. 
+# Values:	[number]
+# Default:	1
+motionspeed = 1
+
+# Decides if imageVue should start in thumbnail modus when an item is clicked in the main menu.
+# Values:	true|false
+# Default:	true
+thumbstart = true
+
+# Feature which enables image to be opened directly in a new browser window when clicking a thumbnail.
+# popup - image opens directly in a popup window.
+# normal - image opens directly in a new browser window.
+# false - images are loaded directly in imageVue. 
+# Values:	popup|normal|false
+# Default:	false
+thumbopenwin = false
+
+# Decides what features to display with the thumbnails.
+# pop - image attributes and description will display in a tooltip dialog box on rollover of the thumbnail. 
+# Values:	pop|[imagename,imageattributes,popupbutton] 
+# Default:	pop
+thumbattribs = pop
+
+# Used to define the information data in the tooltip popover when feature descriptions is set to 'popover' and/or the feature thumbattribs is set to 'pop'. 
+# Values:	 [name, dimensions, filesize, imagedate, description] 
+# Default:	1,0,0,0,0
+popoverattribs = 1,0,0,0,0
+
+# Enables or disables the frame around thubmnails or sets color. 
+# Values:	true|false|[HEX,HEX] 
+# Default:	FFFFFF,FFFFFF
+thumbframe = FFFFFF,FFFFFF
+
+# Enables or disables automatic opening of imageVue in a popup window when user is on low screen resolution(800x600). 
+# Values:	true|false
+# Default:	false
+lowrespopup = false
+
+# Sets the pixelwidth of margins around the image in popup window.
+# Values:	[number]
+# Default:	10
+popmargin = 10
+
+# Sets the properties of the popup window. 
+# [containinswf] keeps the image inside a swf container to prevent right-clicking of image and 'save as...'.
+# [name] is the title of the image. 
+# [attributes] are the attributes of the image. 
+# [description] is the description for the image. 
+# [url] is the absolute path displayed for the image.
+# Values:	 [ contain in swf, name, attributes, description, url ] 
+# Default:	1,0,0,0,0
+popdisplay = 1,0,0,0,0
+
+# We have enabled this for future reference and for dumb servers using the different from *.php extensions. 
+# Values:	[string]
+# Default:	php
+serverextension = php
+
+# Leave empty. Feature is only available for the purpose of being able to set configfile through the URL. 
+configfile = 
+
+# Leave empty. Feature is only available for the inner workings of the popup on low resolution method.
+popped =
+
+[END]
