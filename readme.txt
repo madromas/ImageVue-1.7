@@ -39,14 +39,6 @@ Also included, are droplets which require imageready/photoshop
 for resizing images.
 
 
-3. DOCUMENTATION
------------------
-This folder contains the help.html file which connects directly to 
-our server for the latest documentation. We will shortly be releasing
-new documentation along with a new website. Stay tuned!
-
-
-
 Related Links:
 --------------
 Step-by-step setup:
@@ -61,4 +53,4 @@ http://www.imagevuex.com
 
 -----------------------------------------------------------------------
 
-© mjau@mjau-mjau 2006
+Â© mjau@mjau-mjau 2006
