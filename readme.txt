@@ -1,6 +1,6 @@
 
 30. August 2006
-IMAGEVUE 17 (subversion)
+IMAGEVUE 1.7
 -----------------------------------------------------------------------
 
 The following folders are contained within imagevue17.zip:
