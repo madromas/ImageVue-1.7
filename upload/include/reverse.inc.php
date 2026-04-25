@@ -1,21 +1,22 @@
 <?php
-//
-// r16 16.03.2005
-//
+/**
+ * ImageVue 1.7 - include/reverse.inc.php
+ * PHP 8 Compatibility Update
+ */
 
 function reverse($array) {
-	$out=array();
-
-	for ($i=count($array)-1; $i>=0; $i--)
-		$out[]=$array[$i];
-	return $out;
-
+    if (!is_array($array)) {
+        return array();
+    }
+    // PHP 8: Use the built-in array_reverse for better performance and reliability
+    return array_reverse($array);
 }
 
-function cmp($a, $b) { 
-   if ($a == $b) { 
-       return 0; 
-   }
-   return (strtolower($a) < strtolower($b)) ? -1 : 1; 
-} 
+if (!function_exists('cmp')) {
+    function cmp($a, $b) {
+        // PHP 8: Use strnatcasecmp for "natural" sorting (e.g., image2 before image10)
+        // This is much more robust than manual < or > comparisons
+        return strnatcasecmp((string)$a, (string)$b);
+    }
+}
 ?>
