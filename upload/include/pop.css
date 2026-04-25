@@ -1,0 +1,25 @@
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	padding: 0px;
+	margin: 0px;
+	background-color:#FFFFFF;
+}
+.textf {
+	padding: 10px 10px 16px;
+	line-height: 16px;
+}
+.textfgreyarea {
+	padding: 5px 10px;
+	line-height: 16px;
+	border: solid 1px #FFFFFF;
+}
+.textfattribarea {
+	padding: 5px 10px;
+	line-height: 24px;
+	border: solid 1px #EFEFEF;
+}
+bold, strong {
+	letter-spacing: -1px;
+	font-weight:bold;
+}
